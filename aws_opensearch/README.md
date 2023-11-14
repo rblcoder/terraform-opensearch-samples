@@ -1,5 +1,5 @@
 # Steps to use this code
-## Export aws_profile and run terraform apply
+## Export AWS_PROFILE and run terraform apply
 ```
 export AWS_PROFILE=profile_name
 terraform apply
