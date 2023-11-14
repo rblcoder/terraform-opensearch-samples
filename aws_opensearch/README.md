@@ -1,7 +1,7 @@
 # Steps to use this code
 ## Export aws_profile and run terraform apply
 ```
-export aws_profile=profile_name
+export AWS_PROFILE=profile_name
 terraform apply
 ```
 I had got a time-out error
