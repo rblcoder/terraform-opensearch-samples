@@ -1,0 +1,1 @@
+# Setting sign_aws_requests to false manually in provider configuration for basic auth

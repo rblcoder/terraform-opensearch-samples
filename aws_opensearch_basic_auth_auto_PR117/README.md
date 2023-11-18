@@ -1,0 +1,1 @@
+# In PR 117, signing requests is automatically disabled when using basic auth.
