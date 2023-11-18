@@ -1,1 +1,1 @@
-# In PR 117, signing requests is automatically disabled when using basic auth.
+# In PR [117](https://github.com/opensearch-project/terraform-provider-opensearch/pull/117), signing requests is automatically disabled when using basic auth.
