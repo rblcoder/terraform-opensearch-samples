@@ -1,5 +1,5 @@
 # Steps to use this code
-## Export AWS_PROFILE and run terraform apply
+## Export AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and run terraform apply
 ```
 export AWS_ACCESS_KEY_ID=access
 export AWS_SECRET_ACCESS_KEY=secret
