@@ -5,8 +5,19 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/go:1-1.21-bullseye",
 	"features": {
-		"ghcr.io/devcontainers/features/aws-cli:1": {},
-		"ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {}
+		"ghcr.io/devcontainers/features/aws-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/terraform-asdf:2": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"moby": true,
+			"azureDnsAutoDetection": true,
+			"installDockerBuildx": true,
+			"version": "latest",
+			"dockerDashComposeVersion": "v1"
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
