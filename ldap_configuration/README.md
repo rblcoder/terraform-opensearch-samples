@@ -1,0 +1,1 @@
+Using instructions from https://opster.com/guides/opensearch/opensearch-security/active-directory-ldap-authentication/
