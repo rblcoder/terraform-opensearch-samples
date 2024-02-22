@@ -1,0 +1,37 @@
+---
+_meta:
+ type: "config"
+ config_version: 2
+ 
+config:
+ dynamic:
+   http:
+     anonymous_auth_enabled: false
+   authc:
+    basic_internal_auth_domain:
+      description: "Authenticate via HTTP Basic against internal users database"
+      http_enabled: true
+      transport_enabled: true
+      order: 1
+      http_authenticator:
+        type: basic
+        challenge: true
+      authentication_backend:
+        type: intern
+    jwt_auth_domain:
+      description: "Authenticate via Json Web Token"
+      http_enabled: true
+      transport_enabled: true
+      order: 0
+      http_authenticator:
+        type: jwt
+        challenge: false
+        config:
+          signing_key: "NTNv7j0TuYARvmNMmWXo6fKvM4o6nv/aUi9ryX38ZH+L1bkrnD1ObOQ8JAUmHCBq7Iy7otZcyAagBLHVKvvYaIpmMuxmARQ97jUVG16Jkpkp1wXOPsrF9zwew6TpczyHkHgX5EuLg2MeBuiT/qJACs1J0apruOOJCg/gOtkjB4c="
+          jwt_header: "Authorization"
+          jwt_url_parameter: "jwtToken"
+          roles_key: roles
+          subject_key: sub
+          jwt_clock_skew_tolerance_seconds: 20
+      authentication_backend:
+        type: noop
