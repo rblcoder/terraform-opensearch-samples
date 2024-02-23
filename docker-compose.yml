@@ -16,6 +16,7 @@ services:
       - logger.org.opensearch=warn
       - "OPENSEARCH_JAVA_OPTS=-Xms1g -Xmx1g"
       - "plugins.security.ssl.http.enabled=false"
+      - "OPENSEARCH_INITIAL_ADMIN_PASSWORD=myStrongPassword123@456"
       - ${OSS_ENV_VAR:-FOO=bar}
     
     ulimits:
